@@ -1,79 +1,79 @@
-/* Write your CSS here */
-match-item {
+.match-card {
+  list-style: none;
+  background-color: #0f172a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0f172a;
-  width: 48%;
-  border-radius: 16px;
-  padding-top: 12px;
-  padding-left: 16px;
-  padding-bottom: 12px;
-  padding-right: 16px;
-  margin-bottom: 24px;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 45%;
+  padding: 15px 25px 15px 25px;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .match-item {
-    width: 30%;
-    padding: 24px;
-    margin-bottom: 32px;
+  .match-card {
+    width: 32%;
+    margin-right: 10px;
   }
 }
 
-.competing-team-logo {
-  max-width: 60px;
-  height: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .competing-team-logo {
-    max-width: 150px;
-    height: 150px;
-  }
-}
-.competing-team-name {
-  text-align: center;
+.match-card-name {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Roboto';
   color: #ffffff;
-  font-family: 'Bree Serif';
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .match-card-name {
+    font-size: 22px;
+  }
+}
+
+.match-card-result {
   font-size: 16px;
-  flex-grow: 1;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: #ffffff;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .competing-team-name {
-    font-size: 24px;
+  .match-card-result {
+    font-size: 18px;
   }
 }
 
-.result {
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Bree Serif';
-  font-size: 10px;
+.match-card-logo {
+  width: 70px;
+  height: 70px;
 }
 
 @media screen and (min-width: 768px) {
-  .result {
-    font-size: 16px;
+  .match-card-logo {
+    width: 100px;
+    height: 100px;
   }
 }
 
 .match-status {
+  font-size: 18px;
   font-family: 'Bree Serif';
-  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {
   .match-status {
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'Bree Serif';
   }
 }
 
-.match-won {
+.Won {
   color: #18ed66;
 }
 
-.match-lost {
+.Lost {
   color: #e31a1a;
 }
